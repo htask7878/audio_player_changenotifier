@@ -23,6 +23,7 @@ class Home extends StatelessWidget {
               itemCount: list.length,
               itemBuilder: (context, index) {
                 // SongModel sm = list[index];
+
                 print(list[index].title);
                 return ListTile(
                   onTap: () {

@@ -1,7 +1,7 @@
 import 'package:audio_player_changenotifier/Model.dart';
 import 'package:flutter/material.dart';
 import 'package:on_audio_query/on_audio_query.dart';
-import 'package:provider/provider.dart';
+import 'package:provider/provider.dart';//todo
 
 class second extends StatelessWidget {
   List<SongModel> list;
@@ -68,7 +68,7 @@ class second extends StatelessWidget {
               Slider(
                 onChanged: (value)  async {
                   await m.audioPlayer.seek(Duration(milliseconds: value.toInt()));
-                  // await m.audioPlayer.resume();
+                  await m.audioPlayer.resume();
                   print("Beladiya");
                   print(m.position);
                 },

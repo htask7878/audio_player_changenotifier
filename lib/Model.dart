@@ -58,12 +58,12 @@ class Model extends ChangeNotifier {
   }
 
   //todo Slider change
-  // sliderChange(int value) async {
-  //   await audioPlayer.seek(Duration(milliseconds: value.toInt()));
-  //   await audioPlayer.resume();
-  //   print("seek&resume");
-  //   notifyListeners(); //todo setState jevu kam
-  // }
+  sliderChange(int value) async {
+    await audioPlayer.seek(Duration(milliseconds: value.toInt()));
+    await audioPlayer.resume();
+    print("seek&resume");
+    notifyListeners(); //todo setState jevu kam
+  }
 
   //TODO previousSide song --
   previousSideSong(int index, List<SongModel> list) async {
